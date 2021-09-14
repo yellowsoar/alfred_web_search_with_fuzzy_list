@@ -6,6 +6,7 @@
 
 <!-- MarkdownTOC -->
 
+- [Download](#download)
 - [Usage](#usage)
   - [Web Search](#web-search)
   - [Fuzzy List Management](#fuzzy-list-management)
@@ -19,6 +20,10 @@
 <!-- /MarkdownTOC -->
 
 ---
+
+## Download
+
+<https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/releases/latest>
 
 ## Usage
 
