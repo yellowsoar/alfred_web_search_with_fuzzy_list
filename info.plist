@@ -373,7 +373,7 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Web search with fuzzy list</string>
 	<key>uidata</key>
 	<dict>
 		<key>01663890-45F2-4885-8B74-46D9AA534758</key>
@@ -464,9 +464,11 @@ fi</string>
 		<key>keyword</key>
 		<string>sfl</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string></string>
+	<string>0.1.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/</string>
 </dict>
 </plist>
