@@ -1,2 +1,4 @@
 Alfred forum,,https://www.alfredforum.com/search/?q={query},icons/alfred.png
 Alfred Workflows,,https://www.alfredforum.com/search/?q={query}&type=forums_topic&nodes=3&updated_after=any&sortby=newest&search_and_or=and&search_in=titles,icons/alfred.png
+Packal,,http://www.packal.org/search/site/{query},icons/packal.png
+Packal (via Google),,https://www.google.com/search?&q={query}+site%3Awww.packal.org%2Fworkflow,icons/packal.png
