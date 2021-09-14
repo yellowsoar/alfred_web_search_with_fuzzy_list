@@ -1,5 +1,7 @@
 # Web Search with Fuzzy List
 
+![](demo.gif)
+
 ## Usage
 
 ### Web Search
