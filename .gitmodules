@@ -2,3 +2,7 @@
 	path = alfred-fuzzy
 	url = https://github.com/deanishe/alfred-fuzzy
 	branch = master
+[submodule "fuzzylist"]
+	path = fuzzylist
+	url = https://github.com/derickfay/fuzzylist
+	branch = master
