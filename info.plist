@@ -8,6 +8,19 @@
 	<string>📄Templates</string>
 	<key>connections</key>
 	<dict>
+		<key>0A867966-742C-44AA-A714-751EBCFC4389</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>594848B1-BE70-44D7-9F8B-86115746DC27</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</key>
 		<array>
 			<dict>
@@ -56,6 +69,29 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>594848B1-BE70-44D7-9F8B-86115746DC27</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A867966-742C-44AA-A714-751EBCFC4389</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal file in finder.</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -255,6 +291,86 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>export PATH=/usr/local/bin:${PATH}
+query=$1
+filename=list.csv
+custom_command=$(
+    echo ${query} | sed -E "s@ .*@@"
+)
+
+if [ -x "${custom_command}" ]; then
+    :
+else
+    custom_command=""
+fi
+
+if [ "${query}" == "reveal" ]; then
+    open -R "${filename}"
+elif [ "${query}" == "" ]; then
+    open "${filename}"
+else
+    ${query} "${filename}"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>594848B1-BE70-44D7-9F8B-86115746DC27</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>{var:keyword}csv</string>
+				<key>subtext</key>
+				<string>Press CMD(⌘) to reveal in finder</string>
+				<key>text</key>
+				<string>Open csv file</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>reveal</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>0A867966-742C-44AA-A714-751EBCFC4389</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -267,6 +383,15 @@
 			<key>ypos</key>
 			<integer>140</integer>
 		</dict>
+		<key>0A867966-742C-44AA-A714-751EBCFC4389</key>
+		<dict>
+			<key>note</key>
+			<string>Reveal in finder</string>
+			<key>xpos</key>
+			<integer>185</integer>
+			<key>ypos</key>
+			<integer>335</integer>
+		</dict>
 		<key>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</key>
 		<dict>
 			<key>note</key>
@@ -275,6 +400,15 @@
 			<integer>255</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>594848B1-BE70-44D7-9F8B-86115746DC27</key>
+		<dict>
+			<key>note</key>
+			<string>Reveal or open list.csv</string>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>255</integer>
 		</dict>
 		<key>5B3F222B-7B07-48E9-8E57-A6A73BE1D5C8</key>
 		<dict>
@@ -300,6 +434,13 @@
 			<integer>565</integer>
 			<key>ypos</key>
 			<integer>170</integer>
+		</dict>
+		<key>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>255</integer>
 		</dict>
 		<key>EBFE754D-1F80-4449-9044-0E6E53294C9B</key>
 		<dict>
