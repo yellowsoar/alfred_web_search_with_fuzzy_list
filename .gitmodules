@@ -1,0 +1,4 @@
+[submodule "alfred-fuzzy"]
+	path = alfred-fuzzy
+	url = https://github.com/deanishe/alfred-fuzzy
+	branch = master
