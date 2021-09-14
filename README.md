@@ -2,6 +2,24 @@
 
 ![](demo.gif)
 
+## TOC
+
+<!-- MarkdownTOC -->
+
+- [Usage](#usage)
+  - [Web Search](#web-search)
+  - [Fuzzy List Management](#fuzzy-list-management)
+  - [Workflow Env](#workflow-env)
+- [How it works](#how-it-works)
+  - [Web Search](#web-search-1)
+  - [Open csv](#open-csv)
+  - [More Info](#more-info)
+- [Credit](#credit)
+
+<!-- /MarkdownTOC -->
+
+---
+
 ## Usage
 
 ### Web Search
