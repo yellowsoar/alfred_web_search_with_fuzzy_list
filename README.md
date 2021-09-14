@@ -46,7 +46,14 @@ The workflow will:
 - For fuzzy search, check [alfred-fuzzy][alfred-fuzzy]
 - For fuzzy list filter, check [fuzzylist][fuzzylist]
 
+## Credit
+
+- [alfred-fuzzy][alfred-fuzzy] by [@deanishe][deanishe]
+- [fuzzylist][fuzzylist] by [@derickfay][derickfay]
 
 
+
+[deanishe]: https://github.com/deanishe
 [alfred-fuzzy]: https://github.com/deanishe/alfred-fuzzy
+[derickfay]: https://github.com/derickfay
 [fuzzylist]: https://github.com/derickfay/fuzzylist
