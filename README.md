@@ -25,3 +25,28 @@
 
 - Chage the launch keyword in workflow environment variables settings.
   (default: `sfl`)
+
+## How it works
+
+### Web Search
+
+The workflow will:
+
+1. Save the search keyword to `{var:keyword}`.
+1. Replace `{query}` in the `list.csv` arg volume with `{var:keyword}`.
+1. Open the arg (supposed to be a url) and copy `{var:query}` to clipboard.
+
+### Open csv
+
+1. The workflow will check given command first.
+  - Open file if command not exist or without permission.
+
+### More Info
+
+- For fuzzy search, check [alfred-fuzzy][alfred-fuzzy]
+- For fuzzy list filter, check [fuzzylist][fuzzylist]
+
+
+
+[alfred-fuzzy]: https://github.com/deanishe/alfred-fuzzy
+[fuzzylist]: https://github.com/derickfay/fuzzylist
