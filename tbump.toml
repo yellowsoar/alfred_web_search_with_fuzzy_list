@@ -24,6 +24,9 @@ tag_template = "{new_version}"
 [[file]]
 src = "tbump.toml"
 
+[[file]]
+src = "info.plist"
+
 # You can specify a list of commands to
 # run after the files have been patched
 # and before the git commit is made
