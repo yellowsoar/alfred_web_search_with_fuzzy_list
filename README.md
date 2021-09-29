@@ -6,7 +6,7 @@
 
 <!-- MarkdownTOC -->
 
-- [Download](#download)
+- [Download and Releases](#download-and-releases)
 - [Usage](#usage)
   - [Web Search](#web-search)
   - [Fuzzy List Management](#fuzzy-list-management)
@@ -22,9 +22,15 @@
 
 ---
 
-## Download
+## Download and Releases
 
-<https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/releases/latest>
+- Version number follow [Semantic Versioning][semver] (Major.Minor.Patch).
+- Release when:
+  - Major upgrade
+  - Minor upgrade
+  - Hotfix Patch
+- **Download link**
+  - Github: <https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/releases/latest>
 
 ## Usage
 
@@ -87,3 +93,4 @@ The workflow will:
 [derickfay]: https://github.com/derickfay
 [fuzzylist]: https://github.com/derickfay/fuzzylist
 [fuzzylistpost]: https://www.alfredforum.com/topic/11094-fuzzy-self-updating-list-filter-workflow-template/
+[semver]: https://semver.org
