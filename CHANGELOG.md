@@ -2,6 +2,14 @@
 
 ## Latest Release
 
+### Documentation
+
+* sort reference-style link in README [yellowsoar]
+* add fuzzylist post to references [yellowsoar]
+* fix typo [yellowsoar]
+
+## 0.1.1 (2021-09-14)
+
 ### New Features
 
 * update link, desc & version in workflow info [yellowsoar]
