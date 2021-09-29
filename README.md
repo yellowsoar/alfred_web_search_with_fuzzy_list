@@ -81,9 +81,9 @@ The workflow will:
 
 
 
-[deanishe]: https://github.com/deanishe
 [alfred-fuzzy]: https://github.com/deanishe/alfred-fuzzy
+[alfredforum]: https://www.alfredforum.com
+[deanishe]: https://github.com/deanishe
 [derickfay]: https://github.com/derickfay
 [fuzzylist]: https://github.com/derickfay/fuzzylist
 [fuzzylistpost]: https://www.alfredforum.com/topic/11094-fuzzy-self-updating-list-filter-workflow-template/
-[alfredforum]: https://www.alfredforum.com
