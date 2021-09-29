@@ -15,6 +15,7 @@
   - [Web Search](#web-search-1)
   - [Open csv](#open-csv)
   - [More Info](#more-info)
+- [References](#references)
 - [Credit](#credit)
 
 <!-- /MarkdownTOC -->
@@ -69,6 +70,10 @@ The workflow will:
 - For fuzzy search, check [alfred-fuzzy][alfred-fuzzy]
 - For fuzzy list filter, check [fuzzylist][fuzzylist]
 
+## References
+
+1. [Fuzzy List  Post][fuzzylistpost] on [Alfred forum][alfredforum] by [@derickfay][derickfay]
+
 ## Credit
 
 - [alfred-fuzzy][alfred-fuzzy] by [@deanishe][deanishe]
@@ -80,3 +85,5 @@ The workflow will:
 [alfred-fuzzy]: https://github.com/deanishe/alfred-fuzzy
 [derickfay]: https://github.com/derickfay
 [fuzzylist]: https://github.com/derickfay/fuzzylist
+[fuzzylistpost]: https://www.alfredforum.com/topic/11094-fuzzy-self-updating-list-filter-workflow-template/
+[alfredforum]: https://www.alfredforum.com
