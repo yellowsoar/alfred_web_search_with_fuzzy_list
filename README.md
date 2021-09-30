@@ -24,13 +24,13 @@
 
 ## Download and Releases
 
+- **Download link**
+  - Github: <https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/releases/latest>
 - Version number follow [Semantic Versioning][semver] (Major.Minor.Patch).
 - Release when:
   - Major upgrade
   - Minor upgrade
   - Hotfix Patch
-- **Download link**
-  - Github: <https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/releases/latest>
 
 ## Usage
 
