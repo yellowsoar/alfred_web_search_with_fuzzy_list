@@ -21,11 +21,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0F2BFEC1-ACB9-49D8-AAD6-CE294D99AE47</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD852520-D00C-40FD-9B2A-D69E56B68DB8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>EBFE754D-1F80-4449-9044-0E6E53294C9B</string>
+				<string>B0AA7277-F1ED-4A31-9826-A9157FB0B85E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -46,12 +72,35 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F2BFEC1-ACB9-49D8-AAD6-CE294D99AE47</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Single csv mode (list.csv)</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>76C32CDC-249F-42A1-9D0B-AC7C691F7FE4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>8C96E9E3-6D68-4F50-B40B-D456C52F660E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</string>
+				<string>76C32CDC-249F-42A1-9D0B-AC7C691F7FE4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -65,6 +114,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>01663890-45F2-4885-8B74-46D9AA534758</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B0AA7277-F1ED-4A31-9826-A9157FB0B85E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EBFE754D-1F80-4449-9044-0E6E53294C9B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DD852520-D00C-40FD-9B2A-D69E56B68DB8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B0AA7277-F1ED-4A31-9826-A9157FB0B85E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -133,12 +208,61 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>export query="$1"
+python ./scripts/filename2list.py 
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./tmp/list.csv</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>76C32CDC-249F-42A1-9D0B-AC7C691F7FE4</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>{var:keyword}</string>
 				<key>subtext</key>
-				<string></string>
+				<string>Press CMD(⌘) for single csv mode (list.csv).</string>
 				<key>text</key>
 				<string>Search for : {query}</string>
 				<key>withspace</key>
@@ -148,6 +272,125 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>5B3F222B-7B07-48E9-8E57-A6A73BE1D5C8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>export query="$1"
+export session_var="fuzzy_filter2"
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./tmp/list.csv</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DD852520-D00C-40FD-9B2A-D69E56B68DB8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+import shutil
+
+
+query = sys.argv[1]
+
+full_filename = query.split(".")
+shutil.copyfile("csv/" + query, "tmp/list.csv")
+query = ""
+
+sys.stdout.write(query)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>query</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>8C96E9E3-6D68-4F50-B40B-D456C52F660E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {allvars}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>6440BFDA-0FBC-4D37-843F-C608556F33AE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -228,13 +471,21 @@
 				<key>variables</key>
 				<dict>
 					<key>query</key>
-					<string>{query}</string>
+					<string>query</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>8C96E9E3-6D68-4F50-B40B-D456C52F660E</string>
+			<string>0F2BFEC1-ACB9-49D8-AAD6-CE294D99AE47</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>B0AA7277-F1ED-4A31-9826-A9157FB0B85E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -294,6 +545,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>{var:keyword}csv</string>
+				<key>subtext</key>
+				<string>Press CMD(⌘) to reveal in finder</string>
+				<key>text</key>
+				<string>Open csv file</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -336,27 +608,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>{var:keyword}csv</string>
-				<key>subtext</key>
-				<string>Press CMD(⌘) to reveal in finder</string>
-				<key>text</key>
-				<string>Open csv file</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>reveal</string>
 				<key>passthroughargument</key>
@@ -379,50 +630,84 @@ fi</string>
 		<key>01663890-45F2-4885-8B74-46D9AA534758</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>870</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>285</integer>
 		</dict>
 		<key>0A867966-742C-44AA-A714-751EBCFC4389</key>
 		<dict>
 			<key>note</key>
 			<string>Reveal in finder</string>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>335</integer>
+			<integer>465</integer>
+		</dict>
+		<key>0F2BFEC1-ACB9-49D8-AAD6-CE294D99AE47</key>
+		<dict>
+			<key>note</key>
+			<string>Save search keyword for later</string>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>205</integer>
+		</dict>
+		<key>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</key>
 		<dict>
 			<key>note</key>
 			<string>Original Fuzzylist - copy and change the filename for multiple instances.</string>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>175</integer>
 		</dict>
 		<key>594848B1-BE70-44D7-9F8B-86115746DC27</key>
 		<dict>
 			<key>note</key>
 			<string>Reveal or open list.csv</string>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>360</integer>
 		</dict>
 		<key>5B3F222B-7B07-48E9-8E57-A6A73BE1D5C8</key>
 		<dict>
+			<key>note</key>
+			<string>Keyword for web search</string>
 			<key>xpos</key>
 			<integer>10</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>6440BFDA-0FBC-4D37-843F-C608556F33AE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>76C32CDC-249F-42A1-9D0B-AC7C691F7FE4</key>
+		<dict>
+			<key>note</key>
+			<string>Choose which csv list to search</string>
+			<key>xpos</key>
+			<integer>290</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
 		<key>8C96E9E3-6D68-4F50-B40B-D456C52F660E</key>
 		<dict>
 			<key>note</key>
-			<string>Save query for later</string>
+			<string>Save search keyword for later</string>
 			<key>xpos</key>
-			<integer>170</integer>
+			<integer>190</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
@@ -431,41 +716,57 @@ fi</string>
 			<key>note</key>
 			<string>Copy {var:query} to clipboard</string>
 			<key>xpos</key>
-			<integer>565</integer>
+			<integer>740</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>315</integer>
+		</dict>
+		<key>B0AA7277-F1ED-4A31-9826-A9157FB0B85E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>235</integer>
+		</dict>
+		<key>DD852520-D00C-40FD-9B2A-D69E56B68DB8</key>
+		<dict>
+			<key>note</key>
+			<string>Choose which item to launch</string>
+			<key>xpos</key>
+			<integer>640</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>255</integer>
+			<integer>360</integer>
 		</dict>
 		<key>EBFE754D-1F80-4449-9044-0E6E53294C9B</key>
 		<dict>
 			<key>note</key>
 			<string>Replace "{query}" with {var:query} in csv arg column</string>
 			<key>xpos</key>
-			<integer>420</integer>
+			<integer>595</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>235</integer>
 		</dict>
 		<key>FC0CC581-47A8-4FBF-9668-F5FC685AAFE3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>525</integer>
+			<integer>700</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>175</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>keyword</key>
 		<string>sfl</string>
+		<key>multiple_csv</key>
+		<string>yes</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>0.1.2</string>
 	<key>webaddress</key>
