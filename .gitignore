@@ -1,0 +1,61 @@
+# ****************************************************************************
+# *                             Ignore Everything                            *
+# ****************************************************************************
+
+*
+
+# ****************************************************************************
+# *                                Allow List                                *
+# ****************************************************************************
+
+# (Start with "!")
+
+# Directories
+
+!alfred-fuzzy
+!fuzzylist
+!icons
+!scripts
+
+# Extensions
+!icons/*.png
+!scripts/*.py
+
+# Files
+
+## Project Info
+!LICENSE
+!README.md
+
+## Git
+!.gitignore
+!.gitmodules
+
+## Changelog
+!.gitchangelog.rc
+!.gitchlogmd.tpl
+!CHANGELOG.md
+
+## Version Bump
+!tbump.toml
+
+## code
+!demo.gif
+!info.plist
+!list.csv
+
+
+
+# ****************************************************************************
+# *                                 Deny List                                *
+# ****************************************************************************
+
+# Directories
+
+
+# Extensions
+
+
+# Files
+
+
