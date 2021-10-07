@@ -1,5 +1,7 @@
 # Web Search with Fuzzy List
 
+Web search in 3 steps with fuzzy selection based on csv files.
+
 ![](demo.gif)
 
 ## TOC
@@ -9,7 +11,9 @@
 - [Download and Releases](#download-and-releases)
 - [Usage](#usage)
   - [Web Search](#web-search)
-  - [Fuzzy List Management](#fuzzy-list-management)
+    - [Multiple CSV mode](#multiple-csv-mode)
+    - [Single CSV mode](#single-csv-mode)
+  - [CSV Management](#csv-management)
   - [Workflow Env](#workflow-env)
 - [How it works](#how-it-works)
   - [Web Search](#web-search-1)
@@ -36,11 +40,18 @@
 
 ### Web Search
 
-1. Type workflow launch keyword `sfl` in Alfred.
-1. Type the keyword that you want to search in some website start with space.
-1. Choose the website you want to search with the keyword.
+#### Multiple CSV mode
 
-### Fuzzy List Management
+1. `sfl ` + keyword for web search then press`Return`/`Enter`
+1. CSV file name
+1. choose website
+
+#### Single CSV mode
+
+1. `sfl ` + keyword for web search then hold `CMD(⌘)` and press`Return`/`Enter`
+1. choose website
+
+### CSV Management
 
 - `sflcsv` =>
   Open `list.csv` file.
