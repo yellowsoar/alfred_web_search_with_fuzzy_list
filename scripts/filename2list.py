@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import os
 
 with open("tmp/list.csv", "w") as output_file:
