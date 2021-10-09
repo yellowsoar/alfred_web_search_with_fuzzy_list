@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DD852520-D00C-40FD-9B2A-D69E56B68DB8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</key>
 		<array>
 			<dict>
@@ -87,7 +74,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</string>
+				<string>AC19CFDC-105F-42BA-B640-6E79FF69B6CF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -114,6 +101,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>01663890-45F2-4885-8B74-46D9AA534758</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AC19CFDC-105F-42BA-B640-6E79FF69B6CF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD852520-D00C-40FD-9B2A-D69E56B68DB8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -208,51 +208,26 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
+				<key>concurrently</key>
 				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
 				<key>script</key>
-				<string>export query="$1"
-python ./scripts/filename2list.py 
-./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./tmp/list.csv</string>
+				<string>export query=$1
+/usr/bin/python scripts/copy_csv.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
 				<key>type</key>
 				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>76C32CDC-249F-42A1-9D0B-AC7C691F7FE4</string>
+			<string>AC19CFDC-105F-42BA-B640-6E79FF69B6CF</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -327,35 +302,51 @@ export session_var="fuzzy_filter2"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
-				<string>import sys
-import shutil
-
-
-query = sys.argv[1]
-
-full_filename = query.split(".")
-shutil.copyfile("csv/" + query, "tmp/list.csv")
-query = ""
-
-sys.stdout.write(query)</string>
+				<string>export query="$1"
+python ./scripts/filename2list.py 
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./tmp/list.csv</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</string>
+			<string>76C32CDC-249F-42A1-9D0B-AC7C691F7FE4</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -391,6 +382,25 @@ sys.stdout.write(query)</string>
 			<string>alfred.workflow.utility.debug</string>
 			<key>uid</key>
 			<string>6440BFDA-0FBC-4D37-843F-C608556F33AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>FC0CC581-47A8-4FBF-9668-F5FC685AAFE3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -441,25 +451,6 @@ sys.stdout.write(query)</string>
 			<string>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>FC0CC581-47A8-4FBF-9668-F5FC685AAFE3</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -652,13 +643,6 @@ fi</string>
 			<key>ypos</key>
 			<integer>205</integer>
 		</dict>
-		<key>1C6FF39F-9120-4A6D-B3A8-5A2F102F5BAE</key>
-		<dict>
-			<key>xpos</key>
-			<integer>465</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>2EBB0EE0-164A-4E1F-95C2-FE949F9725BD</key>
 		<dict>
 			<key>note</key>
@@ -719,6 +703,15 @@ fi</string>
 			<integer>740</integer>
 			<key>ypos</key>
 			<integer>315</integer>
+		</dict>
+		<key>AC19CFDC-105F-42BA-B640-6E79FF69B6CF</key>
+		<dict>
+			<key>note</key>
+			<string>copy_csv.py</string>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>B0AA7277-F1ED-4A31-9826-A9157FB0B85E</key>
 		<dict>
