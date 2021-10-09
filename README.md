@@ -69,7 +69,7 @@ Web search in 3 steps with fuzzy selection based on csv files.
 
 ### Workflow Env
 
-- Chage the launch keyword in workflow environment variables settings.
+- Change the launch keyword in workflow environment variables settings.
   (default: `sfl`)
 
 ## How it works
