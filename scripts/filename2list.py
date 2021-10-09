@@ -2,8 +2,11 @@
 
 import os
 
+DIR_CSV = os.getenv("sfl_dir_csv", "csv")
+DIR_CSV_ICONS = os.getenv("sfl_dir_csv_icons", "csv_icons")
+
 with open("tmp/list.csv", "w") as output_file:
-    for _ in os.listdir("csv"):
+    for _ in os.listdir(DIR_CSV):
         full_filename = os.path.splitext(_)
         if full_filename[1] == ".csv" and full_filename[0] not in (
             "list",
@@ -16,7 +19,7 @@ with open("tmp/list.csv", "w") as output_file:
                         full_filename[0],
                         "",
                         full_filename[0] + full_filename[1],
-                        "csv_icons/" + full_filename[0] + ".png",
+                        DIR_CSV_ICONS + "/" + full_filename[0] + ".png",
                     ]
                 )
                 + "\n"

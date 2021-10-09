@@ -760,6 +760,10 @@ fi</string>
 		<string>sfl</string>
 		<key>multiple_csv</key>
 		<string>yes</string>
+		<key>sfl_dir_csv</key>
+		<string>csv</string>
+		<key>sfl_dir_csv_icons</key>
+		<string>csv_icons</string>
 	</dict>
 	<key>version</key>
 	<string>0.1.2</string>
