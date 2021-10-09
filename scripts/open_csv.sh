@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+query=$1
 filename=list.csv
 custom_command=$(
     echo ${query} | sed -E "s@ .*@@"
