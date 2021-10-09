@@ -47,6 +47,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>594848B1-BE70-44D7-9F8B-86115746DC27</key>
+		<array/>
 		<key>5B3F222B-7B07-48E9-8E57-A6A73BE1D5C8</key>
 		<array>
 			<dict>
@@ -542,26 +544,7 @@ python ./scripts/filename2list.py
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>export PATH=/usr/local/bin:${PATH}
-query=$1
-filename=list.csv
-custom_command=$(
-    echo ${query} | sed -E "s@ .*@@"
-)
-
-if [ -x "${custom_command}" ]; then
-    :
-else
-    custom_command=""
-fi
-
-if [ "${query}" == "reveal" ]; then
-    open -R "${filename}"
-elif [ "${query}" == "" ]; then
-    open "${filename}"
-else
-    ${query} "${filename}"
-fi</string>
+				<string>./scripts/open_csv.sh</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>

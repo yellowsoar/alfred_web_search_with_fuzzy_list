@@ -24,6 +24,7 @@
 !csv_icons/*.png
 !icons/*.png
 !scripts/*.py
+!scripts/*.sh
 
 # Files
 
