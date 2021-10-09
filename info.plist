@@ -326,6 +326,7 @@ export session_var="fuzzy_filter2"
 				<string></string>
 				<key>script</key>
 				<string>export query="$1"
+python ./scripts/check_directories.py
 python ./scripts/filename2list.py 
 ./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./tmp/list.csv</string>
 				<key>scriptargtype</key>
@@ -536,27 +537,6 @@ python ./scripts/filename2list.py
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>{var:keyword}csv</string>
-				<key>subtext</key>
-				<string>Press CMD(⌘) to reveal in finder</string>
-				<key>text</key>
-				<string>Open csv file</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -595,6 +575,27 @@ fi</string>
 			<string>594848B1-BE70-44D7-9F8B-86115746DC27</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>{var:keyword}csv</string>
+				<key>subtext</key>
+				<string>Press CMD(⌘) to reveal in finder</string>
+				<key>text</key>
+				<string>Open csv file</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E83F39A2-A40B-44D9-865E-4D56A4E1D4DF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
