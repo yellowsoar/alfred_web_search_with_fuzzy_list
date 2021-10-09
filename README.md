@@ -14,6 +14,7 @@ Web search in 3 steps with fuzzy selection based on csv files.
     - [Multiple CSV mode](#multiple-csv-mode)
     - [Single CSV mode](#single-csv-mode)
   - [CSV Management](#csv-management)
+    - [Single CSV mode](#single-csv-mode-1)
   - [Workflow Env](#workflow-env)
 - [How it works](#how-it-works)
   - [Web Search](#web-search-1)
@@ -53,14 +54,18 @@ Web search in 3 steps with fuzzy selection based on csv files.
 
 ### CSV Management
 
+#### Single CSV mode
+
 - `sflcsv` =>
   Open `list.csv` file.
-- `sflcsv` & `CMD` =>
+- `sflcsv` and hold `CMD(⌘)` =>
   Reveal `list.csv` in finder.
 - `sflcsv [any command]` =>
   Launch `list.csv` via the given command.
+  ex: `sflcsv subl` (open CSV file in sublime text)
 - `sflcsv [any command with argument]` =>
   Launch `list.csv` via the given command and argument.
+  ex: `sflcsv open -a safari` (Open CSV file in Safari)
 
 ### Workflow Env
 
