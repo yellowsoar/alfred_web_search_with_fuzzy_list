@@ -21,4 +21,3 @@ with open("tmp/list.csv", "w") as output_file:
                 )
                 + "\n"
             )
-            # print(full_filename[0] + full_filename[1])
