@@ -13,11 +13,15 @@
 # Directories
 
 !alfred-fuzzy
+!csv
+!csv_icons
 !fuzzylist
 !icons
 !scripts
 
 # Extensions
+!csv/*.csv
+!csv_icons/*.png
 !icons/*.png
 !scripts/*.py
 
