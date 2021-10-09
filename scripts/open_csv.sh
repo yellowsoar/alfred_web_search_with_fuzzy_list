@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+export PATH="/usr/local/bin:${PATH}"
 query=$1
 filename=list.csv
 custom_command=$(
