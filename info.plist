@@ -67,7 +67,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Single csv mode (list.csv)</string>
+				<string>Single csv mode ({var:sfl_file_csv})</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -216,7 +216,7 @@
 				<integer>102</integer>
 				<key>script</key>
 				<string>export query=$1
-/usr/bin/python scripts/copy_csv.py</string>
+./scripts/copy_csv.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -239,7 +239,7 @@
 				<key>keyword</key>
 				<string>{var:keyword}</string>
 				<key>subtext</key>
-				<string>Press CMD(⌘) for single csv mode (list.csv).</string>
+				<string>Press CMD(⌘) for single csv mode ({var:sfl_file_csv}).</string>
 				<key>text</key>
 				<string>Search for : {query}</string>
 				<key>withspace</key>
@@ -280,7 +280,7 @@
 				<key>script</key>
 				<string>export query="$1"
 export session_var="fuzzy_filter2"
-./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./tmp/list.csv</string>
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./"${sfl_dir_tmp}"/"${sfl_file_csv}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -328,9 +328,9 @@ export session_var="fuzzy_filter2"
 				<string></string>
 				<key>script</key>
 				<string>export query="$1"
-python ./scripts/check_directories.py
-python ./scripts/filename2list.py 
-./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./tmp/list.csv</string>
+./scripts/check_directories.py
+./scripts/filename2list.py 
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./"${sfl_dir_tmp}"/"${sfl_file_csv}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -434,7 +434,7 @@ python ./scripts/filename2list.py
 				<string></string>
 				<key>script</key>
 				<string>export query="$1"
-./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py list.csv</string>
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py "$sfl_file_csv"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -741,12 +741,16 @@ python ./scripts/filename2list.py
 	<dict>
 		<key>keyword</key>
 		<string>sfl</string>
-		<key>multiple_csv</key>
-		<string>yes</string>
 		<key>sfl_dir_csv</key>
 		<string>csv</string>
 		<key>sfl_dir_csv_icons</key>
 		<string>csv_icons</string>
+		<key>sfl_dir_icons</key>
+		<string>icons</string>
+		<key>sfl_dir_tmp</key>
+		<string>tmp</string>
+		<key>sfl_file_csv</key>
+		<string>list.csv</string>
 	</dict>
 	<key>version</key>
 	<string>0.1.2</string>

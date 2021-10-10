@@ -2,7 +2,6 @@
 
 export PATH="/usr/local/bin:${PATH}"
 query=$1
-filename=list.csv
 custom_command=$(
     echo ${query} | sed -E "s@ .*@@"
 )
@@ -14,9 +13,9 @@ else
 fi
 
 if [ "${query}" == "reveal" ]; then
-    open -R "${filename}"
+    open -R "${sfl_file_csv}"
 elif [ "${query}" == "" ]; then
-    open "${filename}"
+    open "${sfl_file_csv}"
 else
-    ${query} "${filename}"
+    ${query} "${sfl_file_csv}"
 fi
