@@ -96,6 +96,7 @@ The workflow will:
 ## References
 
 1. [Fuzzy List  Post][fuzzylistpost] on [Alfred forum][alfredforum] by [@derickfay][derickfay]
+1. [Post][post_web_search_with_fuzzy_list] on [Alfred forum][alfredforum]
 
 ## Credit
 
@@ -111,3 +112,4 @@ The workflow will:
 [fuzzylist]: https://github.com/derickfay/fuzzylist
 [fuzzylistpost]: https://www.alfredforum.com/topic/11094-fuzzy-self-updating-list-filter-workflow-template/
 [semver]: https://semver.org
+[post_web_search_with_fuzzy_list]: https://www.alfredforum.com/topic/17499-web-search-with-fuzzy-list/
