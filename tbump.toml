@@ -32,8 +32,16 @@ src = "info.plist"
 # and before the git commit is made
 
 [[before_commit]]
-name = "fetch repo"
-cmd = "git fetch --all"
+name = "fetch repo from remote"
+cmd = "git fetch --all || exit"
+
+[[before_commit]]
+name = "push commits to remote"
+cmd = "git push || exit"
+
+[[before_commit]]
+name = "pull tags to remote"
+cmd = "git push --tags || exit"
 
 [[before_commit]]
 name = "pull repo"
