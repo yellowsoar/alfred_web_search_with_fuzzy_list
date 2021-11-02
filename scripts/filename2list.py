@@ -14,10 +14,9 @@ FILE_CSV = env_var['sfl_file_csv']
 with open(os.path.join(DIR_TMP, "list.csv"), "w") as output_file:
     for _ in os.listdir(DIR_CSV):
         full_filename = os.path.splitext(_)
-        if full_filename[1] == ".csv" and full_filename[0] not in (
-            "list",
-            "csvlist",
-            # "tmp_list"
+        if (
+            full_filename[1] == ".csv"
+            and full_filename[0] not in env_var['sfl_file_csv_ignore']
         ):
             output_file.write(
                 ",".join(

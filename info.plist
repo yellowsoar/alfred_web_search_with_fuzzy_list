@@ -751,6 +751,8 @@ export session_var="fuzzy_filter2"
 		<string>tmp</string>
 		<key>sfl_file_csv</key>
 		<string>demo/list.csv</string>
+		<key>sfl_file_csv_ignore</key>
+		<string>temp,demo,ignore</string>
 	</dict>
 	<key>version</key>
 	<string>0.1.2</string>
