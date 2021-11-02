@@ -4,6 +4,12 @@
 
 ### New Features
 
+* new demo gif for both single & multiple mode [yellowsoar]
+
+## 0.2.0 (2021-11-02)
+
+### New Features
+
 * set ignored csv files from WF ENV VAR [yellowsoar]
 * set multiple csv dir from WF ENV VAR [yellowsoar]
 * multiple csv mode choose by file name [yellowsoar]
