@@ -2,6 +2,36 @@
 
 ## Latest Release
 
+### New Features
+
+* set ignored csv files from WF ENV VAR [yellowsoar]
+* set multiple csv dir from WF ENV VAR [yellowsoar]
+* multiple csv mode choose by file name [yellowsoar]
+
+### Bugs Fixed
+
+* fail to open csv for command in /usr/local/bin [yellowsoar]
+* fail to open csv with given command and args [yellowsoar]
+* missing tmp directory [yellowsoar]
+
+### Documentation
+
+* update single CSV mode description [yellowsoar]
+* update README for searching with multiple csv [yellowsoar]
+* change layout for better readability [yellowsoar]
+* add release strategy [yellowsoar]
+
+### Code Refactoring
+
+* import env_var & sfl_var as module vars [yellowsoar]
+* multiple csv & icon path to symbolic link [yellowsoar]
+* env_var generator [yellowsoar]
+* load dir & file settings from WF ENV VAR [yellowsoar]
+* open csv to external script [yellowsoar]
+* copy csv to external script [yellowsoar]
+
+## 0.1.2 (2021-09-29)
+
 ### Documentation
 
 * sort reference-style link in README [yellowsoar]
