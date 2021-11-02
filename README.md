@@ -32,7 +32,7 @@ Web search in 3 steps with fuzzy selection based on csv files.
 
 - **Download link**
   - Github: <https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/releases/latest>
-- Version number follow [Semantic Versioning][semver] (Major.Minor.Patch).
+- Version number follow [Semantic Versioning][site_semver] (Major.Minor.Patch).
 - Release when:
   - Major upgrade
   - Minor upgrade
@@ -90,26 +90,26 @@ The workflow will:
 
 ### More Info
 
-- For fuzzy search, check [alfred-fuzzy][alfred-fuzzy]
-- For fuzzy list filter, check [fuzzylist][fuzzylist]
+- For fuzzy search, check [alfred-fuzzy][repo_alfred_fuzzy]
+- For fuzzy list filter, check [fuzzylist][repo_fuzzylist]
 
 ## References
 
-1. [Fuzzy List  Post][fuzzylistpost] on [Alfred forum][alfredforum] by [@derickfay][derickfay]
-1. [Post][post_web_search_with_fuzzy_list] on [Alfred forum][alfredforum]
+1. [Post][post_web_search_with_fuzzy_list] on [Alfred forum][site_alfred_forum]
+1. [Fuzzy List  Post][post_fuzzylist] on [Alfred forum][site_alfred_forum] by [@derickfay][people_derickfay]
 
 ## Credit
 
-- [alfred-fuzzy][alfred-fuzzy] by [@deanishe][deanishe]
-- [fuzzylist][fuzzylist] by [@derickfay][derickfay]
+- [alfred-fuzzy][repo_alfred_fuzzy] by [@deanishe][people_deanishe]
+- [fuzzylist][repo_fuzzylist] by [@derickfay][people_derickfay]
 
 
 
-[alfred-fuzzy]: https://github.com/deanishe/alfred-fuzzy
-[alfredforum]: https://www.alfredforum.com
-[deanishe]: https://github.com/deanishe
-[derickfay]: https://github.com/derickfay
-[fuzzylist]: https://github.com/derickfay/fuzzylist
-[fuzzylistpost]: https://www.alfredforum.com/topic/11094-fuzzy-self-updating-list-filter-workflow-template/
-[semver]: https://semver.org
+[people_deanishe]: https://github.com/deanishe
+[people_derickfay]: https://github.com/derickfay
+[post_fuzzylist]: https://www.alfredforum.com/topic/11094-fuzzy-self-updating-list-filter-workflow-template/
 [post_web_search_with_fuzzy_list]: https://www.alfredforum.com/topic/17499-web-search-with-fuzzy-list/
+[repo_alfred_fuzzy]: https://github.com/deanishe/alfred-fuzzy
+[repo_fuzzylist]: https://github.com/derickfay/fuzzylist
+[site_alfred_forum]: https://www.alfredforum.com
+[site_semver]: https://semver.org
