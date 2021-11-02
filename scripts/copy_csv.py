@@ -4,23 +4,11 @@ import os
 import shutil
 import sys
 
-import omni_settings
-
-env_var = omni_settings.env_var
+from omni_settings import env_var, sfl_var
 
 query = os.getenv('query', '')
-path_csv_query = "/".join(
-    [
-        env_var["sfl_dir_csv"],
-        query,
-    ]
-)
-path_csv_tmp = "/".join(
-    [
-        env_var["sfl_dir_tmp"],
-        env_var["sfl_file_csv"],
-    ]
-)
+path_csv_query = os.path.join(sfl_var['dir_work_csv'], query)
+path_csv_tmp = os.path.join(env_var["sfl_dir_tmp"], sfl_var['file_work_csv'])
 
 shutil.copyfile(path_csv_query, path_csv_tmp)
 sys.stdout.write("")

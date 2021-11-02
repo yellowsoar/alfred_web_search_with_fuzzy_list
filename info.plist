@@ -280,7 +280,7 @@
 				<key>script</key>
 				<string>export query="$1"
 export session_var="fuzzy_filter2"
-./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./"${sfl_dir_tmp}"/"${sfl_file_csv}"</string>
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./"${sfl_dir_tmp}"/list.csv</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -330,7 +330,7 @@ export session_var="fuzzy_filter2"
 				<string>export query="$1"
 ./scripts/check_directories.py
 ./scripts/filename2list.py 
-./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./"${sfl_dir_tmp}"/"${sfl_file_csv}"</string>
+./alfred-fuzzy/fuzzy.py /usr/bin/python ./fuzzylist/fuzzylist.py ./"${sfl_dir_tmp}"/list.csv</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -742,15 +742,15 @@ export session_var="fuzzy_filter2"
 		<key>keyword</key>
 		<string>sfl</string>
 		<key>sfl_dir_csv</key>
-		<string>csv</string>
+		<string>demo/csv</string>
 		<key>sfl_dir_csv_icons</key>
-		<string>csv_icons</string>
+		<string>demo/csv_icons</string>
 		<key>sfl_dir_icons</key>
-		<string>icons</string>
+		<string>demo/icons</string>
 		<key>sfl_dir_tmp</key>
 		<string>tmp</string>
 		<key>sfl_file_csv</key>
-		<string>list.csv</string>
+		<string>demo/list.csv</string>
 	</dict>
 	<key>version</key>
 	<string>0.1.2</string>

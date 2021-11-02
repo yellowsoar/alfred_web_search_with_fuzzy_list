@@ -1,6 +1,0 @@
-Bing,,https://www.bing.com/search?q={query},
-Brave,,https://search.brave.com/search?q={query},
-DuckDuckGo,,https://duckduckgo.com/?q={query},
-Google,,https://www.google.com/search?q={query},
-Pinboard,,https://pinboard.in/search/?query={query},
-Yahoo,,https://search.yahoo.com/search?p={query},
