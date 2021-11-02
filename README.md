@@ -2,7 +2,8 @@
 
 Web search in 3 steps with fuzzy selection based on csv files.
 
-![](demo.gif)
+![](demo/sigle_mode.gif)
+![](demo/multiple_mode.gif)
 
 ## TOC
 
