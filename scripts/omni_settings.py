@@ -8,6 +8,7 @@ env_var_default = [
     ["sfl_dir_icons", "demo/icons"],
     ["sfl_dir_tmp", "tmp"],
     ["sfl_file_csv", "demo/list.csv"],
+    ["sfl_file_csv_ignore", []],
 ]
 env_var_list_default = ""
 env_var_list_delimiter = ","
@@ -32,8 +33,6 @@ def update_dict(dictionary, key, value):
             )
         else:
             dictionary[key] = value
-
-
 
 
 env_var = {}

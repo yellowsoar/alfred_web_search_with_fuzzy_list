@@ -2,10 +2,7 @@
 
 import os
 
-import omni_settings
-
-env_var = omni_settings.env_var
-sfl_var = omni_settings.sfl_var
+from omni_settings import env_var, sfl_var
 
 dir_check_list = [
     env_var['sfl_dir_tmp'],

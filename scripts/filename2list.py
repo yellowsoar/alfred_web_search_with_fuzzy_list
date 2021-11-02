@@ -2,17 +2,12 @@
 
 import os
 
-import omni_settings
+from omni_settings import env_var, sfl_var
 
-env_var = omni_settings.env_var
-
-DIR_CSV = env_var['sfl_dir_csv']
-DIR_CSV_ICONS = env_var['sfl_dir_csv_icons']
-DIR_TMP = env_var['sfl_dir_tmp']
-FILE_CSV = env_var['sfl_file_csv']
-
-with open(os.path.join(DIR_TMP, "list.csv"), "w") as output_file:
-    for _ in os.listdir(DIR_CSV):
+with open(
+    os.path.join(env_var['sfl_dir_tmp'], "list.csv"), "w"
+) as output_file:
+    for _ in os.listdir(env_var['sfl_dir_csv']):
         full_filename = os.path.splitext(_)
         if (
             full_filename[1] == ".csv"
@@ -24,7 +19,10 @@ with open(os.path.join(DIR_TMP, "list.csv"), "w") as output_file:
                         full_filename[0],
                         "",
                         full_filename[0] + full_filename[1],
-                        DIR_CSV_ICONS + "/" + full_filename[0] + ".png",
+                        env_var['sfl_dir_csv_icons']
+                        + "/"
+                        + full_filename[0]
+                        + ".png",
                     ]
                 )
                 + "\n"
