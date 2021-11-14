@@ -16,9 +16,13 @@ with open(
             output_file.write(
                 ",".join(
                     [
+                        # title
                         full_filename[0],
+                        # subtitle
                         "",
+                        # arg
                         full_filename[0] + full_filename[1],
+                        # icon
                         env_var['sfl_dir_csv_icons']
                         + "/"
                         + full_filename[0]
