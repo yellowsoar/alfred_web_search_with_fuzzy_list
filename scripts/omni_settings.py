@@ -14,7 +14,7 @@ env_var_list_default = ""
 env_var_list_delimiter = ","
 sfl_var = {
     "dir_work_csv": "csv",
-    "dir_work_csv_icons": "icons",
+    "dir_work_csv_icons": "csv_icons",
     "file_work_csv": "list.csv",
     "file_work_csv_icons": "icons",
 }

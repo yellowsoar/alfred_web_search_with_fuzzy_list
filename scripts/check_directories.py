@@ -10,6 +10,7 @@ dir_check_list = [
 dir_symbolic_list = [
     # source, target
     [env_var['sfl_dir_csv'], sfl_var['dir_work_csv']],
+    [env_var['sfl_dir_icons'], sfl_var['file_work_csv_icons']],
     [env_var['sfl_dir_csv_icons'], sfl_var['dir_work_csv_icons']],
     [env_var['sfl_file_csv'], sfl_var['file_work_csv']],
 ]
