@@ -2,6 +2,14 @@
 
 ## Latest Release
 
+### Documentation
+
+* inline comment for better readability [yellowsoar]
+* refactor ref-links for readability [yellowsoar]
+* add alfred forum post to references [yellowsoar]
+
+## 0.2.1 (2021-11-02)
+
 ### New Features
 
 * new demo gif for both single & multiple mode [yellowsoar]

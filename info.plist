@@ -755,7 +755,7 @@ export session_var="fuzzy_filter2"
 		<string>temp,demo,ignore</string>
 	</dict>
 	<key>version</key>
-	<string>0.2.1</string>
+	<string>0.2.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/yellowsoar/alfred_web_search_with_fuzzy_list/</string>
 </dict>
